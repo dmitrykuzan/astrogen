@@ -1,0 +1,135 @@
+.lifehack {
+  padding-top: 11rem;
+
+  .container {
+    position: relative;
+  }
+
+  &__wrapper {
+    gap: 6rem;
+
+    @media (max-width: em(1080)) {
+      gap: 3rem;
+    }
+  }
+
+  &__text {
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 82.5rem;
+    gap: 1rem;
+
+    &-bottom {
+      gap: 2rem;
+
+      @media (max-width: em(1080)) {
+        gap: 1rem;
+      }
+    }
+
+    h3 {
+      font-size: fluid-font(1.6rem, 1.4rem);
+    }
+
+    p {
+      font-size: fluid-font(1.8rem, 1.6rem);
+    }
+  }
+
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3rem;
+
+    @media (max-width: em(1080)) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    @media (max-width: em(575)) {
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+    }
+  }
+
+  &__item {
+    border: 0.2rem solid var(--clr-default-500);
+    border-radius: 1rem;
+    padding-top: 1.2rem;
+    padding-right: 1rem;
+    padding-bottom: 2rem;
+    padding-left: 1rem;
+    max-width: 33rem;
+    box-shadow: 0px 4px 10px 0px rgba(77, 77, 77, 0.15);
+    background-color: var(--clr-default-100);
+    gap: 1rem;
+
+    &-icon {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-right: auto;
+      margin-left: auto;
+      border-radius: 50%;
+      width: 7rem;
+      height: 7rem;
+      background-color: rgba(73, 90, 180, 0.1);
+    }
+
+    &-text {
+      gap: 1rem;
+
+      h3 {
+        font-family: "Cormorant";
+        font-size: 2.5rem;
+        text-align: center;
+        color: var(--clr-accent-400);
+      }
+
+      p {
+        line-height: 125%;
+        text-align: center;
+      }
+    }
+
+    @media (max-width: em(1080)) {
+      min-height: 17rem;
+      max-width: initial;
+    }
+
+    @media (max-width: em(1080)) {
+      padding-top: 1.2rem;
+    }
+  }
+
+  &__decor {
+    position: absolute;
+
+    &-left-top {
+      left: -11rem;
+      top: 4rem;
+    }
+
+    &-right-bot {
+      right: -5rem;
+      bottom: -5rem;
+    }
+
+    &-right-top {
+      right: -7rem;
+      top: -6rem;
+    }
+
+    @media (max-width: em(1080)) {
+      display: none;
+    }
+  }
+
+  @media (max-width: em(1380)) {
+    padding-top: 8rem;
+  }
+
+  @media (max-width: em(767)) {
+    padding-top: 5rem;
+  }
+}

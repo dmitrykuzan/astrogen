@@ -1,0 +1,129 @@
+<section class="hero">
+  <div class="container">
+    <div class="hero__decor hero__decor-left-top">
+      <img src="img/hero/left-top-decor.svg" width="69" height="79" alt="" />
+    </div>
+    <div class="hero__decor hero__decor-left-bot">
+      <img src="img/hero/left-bot-decor.svg" width="76" height="66" alt="" />
+    </div>
+    <div class="hero__decor hero__decor-right-bot">
+      <img src="img/hero/right-bot-decor.svg" width="64" height="74" alt="" />
+    </div>
+    <div class="hero__decor hero__decor-right-top">
+      <img src="img/hero/right-top-decor.svg" width="55" height="47" alt="" />
+    </div>
+    <div class="hero__wrapper">
+      <div class="hero__text stack column">
+        <h1 class="hero__title typography center accent h1 w-700">
+          Раскройте тайны <span>своей судьбы</span> с натальной картой!
+        </h1>
+        <div class="hero__description">
+          <p class="typography center p">
+            Вы чувствуете, что застряли в одном месте? Не понимаете, почему одни
+            и те же проблемы повторяются в вашей жизни? Хотите больше
+            уверенности в своих решениях или ищете путь к счастью и гармонии?
+          </p>
+        </div>
+        <p></p>
+      </div>
+      <form class="hero__bday stack column">
+        <div
+          class="hero__bday-progress stack align-center justify-space-between"
+        >
+          <span class="hero__bday-progress-track"></span>
+          <span class="hero__bday-progress-bullet active">1</span>
+          <span class="hero__bday-progress-bullet">2</span>
+          <span class="hero__bday-progress-bullet">3</span>
+          <span class="hero__bday-progress-bullet">4</span>
+          <span class="hero__bday-progress-bullet">5</span>
+        </div>
+        <div class="hero__bday-body stack column center">
+          <h3 class="hero__bday-title typography accent center w-400">
+            Введите свою дату рождения, чтобы узнать положение солнца на
+            зодиакальной оси:
+          </h3>
+
+          <div class="hero__bday-fields stack align-center">
+            <div class="dropdown" id="day-dropdown">
+              <div class="dropdown-current">
+                <input type="text" placeholder="5" readonly />
+                <span class="icon">
+                  <svg
+                    width="8"
+                    height="5"
+                    viewBox="0 0 8 5"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M0.97549 0.183058C0.752333 -0.0610194 0.390524 -0.0610194 0.167368 0.183058C-0.0557892 0.427136 -0.0557892 0.822864 0.167368 1.06694L3.59594 4.81694C3.8191 5.06102 4.1809 5.06102 4.40406 4.81694L7.83263 1.06694C8.05579 0.822864 8.05579 0.427136 7.83263 0.183058C7.60948 -0.0610194 7.24767 -0.0610194 7.02451 0.183058L4 3.49112L0.97549 0.183058Z"
+                      fill="#303030"
+                    />
+                  </svg>
+                </span>
+              </div>
+              <ul class="dropdown-list" id="day-list"></ul>
+            </div>
+
+            <div class="dropdown" id="month-dropdown">
+              <div class="dropdown-current">
+                <input type="text" placeholder="Декабрь" readonly />
+                <span class="icon">
+                  <svg
+                    width="8"
+                    height="5"
+                    viewBox="0 0 8 5"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M0.97549 0.183058C0.752333 -0.0610194 0.390524 -0.0610194 0.167368 0.183058C-0.0557892 0.427136 -0.0557892 0.822864 0.167368 1.06694L3.59594 4.81694C3.8191 5.06102 4.1809 5.06102 4.40406 4.81694L7.83263 1.06694C8.05579 0.822864 8.05579 0.427136 7.83263 0.183058C7.60948 -0.0610194 7.24767 -0.0610194 7.02451 0.183058L4 3.49112L0.97549 0.183058Z"
+                      fill="#303030"
+                    />
+                  </svg>
+                </span>
+              </div>
+              <ul class="dropdown-list" id="month-list"></ul>
+            </div>
+
+            <div class="dropdown" id="year-dropdown">
+              <div class="dropdown-current">
+                <input type="text" placeholder="1999" readonly />
+                <span class="icon">
+                  <svg
+                    width="8"
+                    height="5"
+                    viewBox="0 0 8 5"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M0.97549 0.183058C0.752333 -0.0610194 0.390524 -0.0610194 0.167368 0.183058C-0.0557892 0.427136 -0.0557892 0.822864 0.167368 1.06694L3.59594 4.81694C3.8191 5.06102 4.1809 5.06102 4.40406 4.81694L7.83263 1.06694C8.05579 0.822864 8.05579 0.427136 7.83263 0.183058C7.60948 -0.0610194 7.24767 -0.0610194 7.02451 0.183058L4 3.49112L0.97549 0.183058Z"
+                      fill="#303030"
+                    />
+                  </svg>
+                </span>
+              </div>
+              <ul class="dropdown-list" id="year-list"></ul>
+            </div>
+          </div>
+
+          <a class="button hero__bday-link" href="/quiz.html">Далее</a>
+        </div>
+        <img
+          class="hero__bday-decor"
+          src="img/hero/astro-circle.svg"
+          width="219"
+          height="207"
+          alt="Astro circle decor"
+        />
+      </form>
+    </div>
+  </div>
+</section>

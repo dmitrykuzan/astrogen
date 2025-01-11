@@ -1,0 +1,23 @@
+.header {
+  margin-top: 2.7rem;
+
+  &__wrapper {
+    display: flex;
+    align-items: center;
+  }
+
+  &__items {
+    gap: 2rem;
+  }
+
+  &__button-login {
+    min-height: 3.3rem;
+    font-size: 1.4rem;
+  }
+
+  &__bottom-mobile {
+    @media (max-width: em(720)) {
+      margin-top: 2rem;
+    }
+  }
+}

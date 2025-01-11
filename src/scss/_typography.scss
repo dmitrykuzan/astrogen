@@ -1,0 +1,61 @@
+.typography {
+  &.h1 {
+    font-family: "Cormorant";
+    font-size: fluid-font(6rem, 4rem);
+
+    span {
+      font-style: italic;
+      color: var(--clr-accent-500);
+    }
+  }
+
+  &.h2 {
+    font-family: "Cormorant";
+    font-size: fluid-font(4rem, 3rem);
+
+    span {
+      font-style: italic;
+      color: var(--clr-accent-500);
+    }
+  }
+
+  &.p {
+    line-height: 122%;
+  }
+
+  &.caption {
+    font-size: 1.2rem;
+  }
+
+  &.w-400 {
+    font-weight: 400;
+  }
+
+  &.w-700 {
+    font-weight: 700;
+  }
+
+  &.accent {
+    color: var(--clr-accent-400);
+  }
+
+  &.success {
+    color: var(--clr-status-success);
+  }
+
+  &.error {
+    color: var(--clr-primary-600);
+  }
+
+  &.uppercase {
+    text-transform: uppercase;
+  }
+
+  &.center {
+    text-align: center;
+  }
+
+  &.lh-117 {
+    line-height: 117%;
+  }
+}

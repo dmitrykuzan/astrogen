@@ -1,0 +1,87 @@
+.language {
+  position: relative;
+  z-index: 1;
+  cursor: pointer;
+
+  &__current {
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding-right: 2rem;
+    font-size: 1.7rem;
+    transition: color var(--transition);
+
+    &::before {
+      content: "";
+      position: absolute;
+      right: 0;
+      top: 50%;
+      width: 1.5rem;
+      height: 0.8rem;
+      background-image: url(../img/ui/language-arrow.svg);
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+      transform: translateY(-50%) rotate(0);
+      transition: transform var(--transition);
+    }
+  }
+
+  &__dropdown {
+    position: absolute;
+    left: 0;
+    top: 100%;
+    margin-top: 0.4rem;
+    border: 0.1rem solid var(--clr-default-500);
+    border-radius: 1rem;
+    padding-top: 0.8rem;
+    padding-right: 1.5rem;
+    padding-bottom: 0.8rem;
+    padding-left: 1.5rem;
+    width: max-content;
+    background-color: var(--clr-default-100);
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity var(--transition), visibility var(--transition);
+  }
+
+  &__dropdown-item {
+    &:not(:last-child) {
+      margin-bottom: 1rem;
+    }
+  }
+
+  &__dropdown-item a {
+    display: flex;
+    align-items: center;
+    font-size: 1.4rem;
+    color: var(--clr-default-320);
+    transition: color var(--transition);
+
+    &:hover {
+      color: var(--clr-accent-400);
+      transition: color var(--transition);
+    }
+  }
+
+  &:focus &__dropdown,
+  &:hover &__dropdown {
+    opacity: 1;
+    visibility: visible;
+    transition: opacity var(--transition), visibility var(--transition);
+  }
+
+  &:focus &__current,
+  &:hover &__current {
+    color: var(--clr-accent-400);
+
+    &::before {
+      transform: translateY(-50%) rotate(-180deg);
+      transition: transform var(--transition);
+    }
+  }
+
+  @media (max-width: em(575)) {
+    display: none;
+  }
+}
