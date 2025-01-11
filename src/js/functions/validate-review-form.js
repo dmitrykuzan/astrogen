@@ -56,9 +56,9 @@ export const validateReviewForm = () => {
   }
 
   // Событие клика по кнопке отправки
-  submitButton.addEventListener("click", handleSubmit);
+  submitButton?.addEventListener("click", handleSubmit);
 
   // События ввода в полях
-  nameInput.addEventListener("input", handleInput);
-  emailInput.addEventListener("input", handleInput);
+  nameInput?.addEventListener("input", handleInput);
+  emailInput?.addEventListener("input", handleInput);
 };
