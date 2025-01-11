@@ -73,6 +73,7 @@
                   <div class="dropdown" id="day-dropdown">
                     <div class="dropdown-current">
                       <input type="text" placeholder="5" readonly />
+                      <span class="error-text">Заполните поле</span>
                       <span class="icon">
                         <svg
                           width="8"
@@ -96,6 +97,7 @@
                   <div class="dropdown" id="month-dropdown">
                     <div class="dropdown-current">
                       <input type="text" placeholder="Декабрь" readonly />
+                      <span class="error-text">Заполните поле</span>
                       <span class="icon">
                         <svg
                           width="8"
@@ -119,6 +121,7 @@
                   <div class="dropdown" id="year-dropdown">
                     <div class="dropdown-current">
                       <input type="text" placeholder="1999" readonly />
+                      <span class="error-text">Заполните поле</span>
                       <span class="icon">
                         <svg
                           width="8"
@@ -611,7 +614,7 @@
                     type="text"
                     placeholder="Ваше место рождения (Город)"
                   />
-
+                  <span class="error-text">Укажите ваше место рождения</span>
                   <span class="icon">
                     <svg
                       width="8"
@@ -707,6 +710,7 @@
               <form class="quiz__step-bottom stack column center">
                 <div class="input input-time">
                   <input name="time" type="text" placeholder="Время" />
+                  <span class="error-text">Укажите ваше время рождения</span>
                 </div>
 
                 <div class="quiz__step-helper stack column center">
@@ -824,9 +828,11 @@
                       type="text"
                       placeholder="Как вас зовут?"
                     />
+                    <span class="error-text">Укажите ваше Имя</span>
                   </div>
                   <div class="input">
                     <input name="email" type="email" placeholder="Ваша почта" />
+                    <span class="error-text">Укажите ваш email</span>
                   </div>
                 </div>
 

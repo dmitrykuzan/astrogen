@@ -153,6 +153,27 @@
         .quiz__fields {
           gap: 1rem;
 
+          .dropdown-current {
+            position: relative;
+
+            .error-text {
+              position: absolute;
+              left: 0;
+              top: 4rem;
+              width: 100%;
+              font-size: 1.4rem;
+              color: red;
+              opacity: 0;
+              transition: opacity var(--transition);
+            }
+
+            input {
+              &.error + .error-text {
+                opacity: 1;
+              }
+            }
+          }
+
           @media (max-width: em(767)) {
             flex-direction: column;
           }
@@ -251,7 +272,7 @@
 
       .quiz__step-fields {
         width: 100%;
-        gap: 1rem;
+        gap: 2rem;
       }
     }
   }

@@ -1,4 +1,7 @@
 export const quiz = () => {
+  const btnHero = document.querySelector(".hero__bday-link");
+  const heroFields = document.querySelector(".hero__bday-fields");
+
   const quizSteps = document.querySelectorAll(".quiz__step");
 
   const quizStep1 = document.querySelector(".quiz__step--1");
@@ -53,18 +56,29 @@ export const quiz = () => {
   // Функция для очистки ошибок при взаимодействии с полями
 
   // Сценарии переключения шагов
-  btnStep2.forEach((btn) => {
-    btn.addEventListener("click", () => {
-      quizSteps.forEach((step) => step.classList.remove("active"));
-      if (quizStep3) quizStep3.classList.add("active");
-    });
+
+  // На главной
+  btnHero?.addEventListener("click", (e) => {
+    if (!validateStep(heroFields)) {
+      e.preventDefault();
+
+      return;
+    }
   });
+  // На главной
 
   btnStep1?.addEventListener("click", () => {
     if (!validateStep(quizStep1)) return;
 
     quizSteps.forEach((step) => step.classList.remove("active"));
     if (quizStep2) quizStep2.classList.add("active");
+  });
+
+  btnStep2?.forEach((btn) => {
+    btn.addEventListener("click", () => {
+      quizSteps.forEach((step) => step.classList.remove("active"));
+      if (quizStep3) quizStep3.classList.add("active");
+    });
   });
 
   btnStep3?.addEventListener("click", () => {
@@ -90,7 +104,7 @@ export const quiz = () => {
 
   btnStep5?.addEventListener("click", (e) => {
     if (!validateStep(quizStep5)) {
-      e.preventDefault(); // Останавливаем стандартное поведение только если не валидно
+      e.preventDefault();
       return;
     }
   });

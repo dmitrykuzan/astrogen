@@ -9,4 +9,5 @@ export * from "./mobile-check";
 export * from "./modal";
 export * from "./tabs";
 export * from "./validate-forms";
+export * from "./validate-review-form";
 export * from "./ratingStar";

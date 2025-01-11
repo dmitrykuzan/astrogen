@@ -10,6 +10,7 @@ import {
   accordion,
   ratingStar,
   modals,
+  validateReviewForm,
 } from "./functions/";
 
 // Components
@@ -25,6 +26,7 @@ window.addEventListener("DOMContentLoaded", () => {
   dynamicAdaptive();
   horoscopeSlider();
   reviewsSlider();
+  validateReviewForm();
   ratingStar();
   quiz();
   datePicker();

@@ -30,10 +30,22 @@
             </label>
           </div>
           <div class="input">
-            <input type="text" name="name-review" placeholder="Ваше имя " />
+            <input
+              class="input-name"
+              type="text"
+              name="name-review"
+              placeholder="Ваше имя "
+            />
+            <span class="error-text">Введите ваше имя</span>
           </div>
           <div class="input">
-            <input type="email" name="name-review" placeholder="Ваша почта" />
+            <input
+              class="input-email"
+              type="email"
+              name="name-review"
+              placeholder="Ваша почта"
+            />
+            <span class="error-text">Введите ваш email</span>
           </div>
           <div class="form-review__textarea-mobile"></div>
           <div class="rating stack align-center">
@@ -111,10 +123,7 @@
               </span>
             </div>
           </div>
-          <button
-            type="button"
-            class="form-review__button button modal--thanks-trigger"
-          >
+          <button type="button" class="form-review__button button">
             Оставить отзыв
           </button>
         </div>

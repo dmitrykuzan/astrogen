@@ -25,6 +25,17 @@
     transform: translateY(-50%);
   }
 
+  .error-text {
+    position: absolute;
+    left: 0;
+    top: 4rem;
+    width: 100%;
+    font-size: 1.4rem;
+    color: red;
+    opacity: 0;
+    transition: opacity var(--transition);
+  }
+
   input {
     outline: none;
     border-radius: 0.5rem;
@@ -41,6 +52,10 @@ input {
   border-radius: 0.5rem;
   &.error {
     border: 0.1rem solid red;
+  }
+
+  &.error + .error-text {
+    opacity: 1;
   }
 }
 
