@@ -77,6 +77,10 @@
 
   &__button {
     max-width: 21rem;
+
+    @media (max-width: em(575)) {
+      max-width: initial;
+    }
   }
 
   @media (max-width: em(992)) {

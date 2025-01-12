@@ -40,6 +40,10 @@
 
     &-orbit2 {
       animation: rotateCircle 12s linear infinite;
+
+      @media (max-width: em(575)) {
+        max-width: 26rem;
+      }
     }
 
     &-orbit1 {
