@@ -8,14 +8,20 @@ export const reviewsSlider = () => {
       el: ".reviews__swiper-pagination",
       clickable: true,
     },
-    autoplay: {
-      delay: 5000,
-      disableOnInteraction: false,
-    },
+    // autoplay: {
+    //   delay: 5000,
+    //   disableOnInteraction: false,
+    // },
     breakpoints: {
       1020: {
-        slidesPerView: 1.5,
+        slidesPerView: 1.7,
         spaceBetween: 0,
+      },
+      1280: {
+        // spaceBetween: 20,
+        slidesPerView: 3.5,
+        spaceBetween: 20,
+        autoHeight: true,
       },
     },
   });

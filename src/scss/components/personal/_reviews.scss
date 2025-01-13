@@ -100,12 +100,23 @@
 
   .swiper-slide {
     filter: blur(2px);
-    transform: scale(0.85);
-    transition: transform var(--transition);
+    transform: scale(0.9);
+    transition: transform 0.5s;
 
     &.swiper-slide-active {
       filter: initial;
       transform: scale(1);
+    }
+
+    &.swiper-slide-prev,
+    &.swiper-slide-next {
+      filter: initial;
+      transform: scale(1);
+
+      @media (max-width: em(1280)) {
+        filter: blur(2px);
+        transform: scale(0.9);
+      }
     }
   }
 }

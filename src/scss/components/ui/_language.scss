@@ -11,6 +11,15 @@
     font-size: 1.7rem;
     transition: color var(--transition);
 
+    &.active {
+      color: var(--clr-accent-400);
+
+      &::before {
+        transform: translateY(-50%) rotate(-180deg);
+        transition: transform var(--transition);
+      }
+    }
+
     &::before {
       content: "";
       position: absolute;
@@ -43,6 +52,12 @@
     opacity: 0;
     visibility: hidden;
     transition: opacity var(--transition), visibility var(--transition);
+
+    &.show {
+      opacity: 1;
+      visibility: visible;
+      transition: opacity var(--transition), visibility var(--transition);
+    }
   }
 
   &__dropdown-item {
@@ -64,20 +79,20 @@
     }
   }
 
-  &:focus &__dropdown,
-  &:hover &__dropdown {
-    opacity: 1;
-    visibility: visible;
-    transition: opacity var(--transition), visibility var(--transition);
-  }
+  @media (hover) {
+    &:hover &__dropdown {
+      opacity: 1;
+      visibility: visible;
+      transition: opacity var(--transition), visibility var(--transition);
+    }
 
-  &:focus &__current,
-  &:hover &__current {
-    color: var(--clr-accent-400);
+    &:hover &__current {
+      color: var(--clr-accent-400);
 
-    &::before {
-      transform: translateY(-50%) rotate(-180deg);
-      transition: transform var(--transition);
+      &::before {
+        transform: translateY(-50%) rotate(-180deg);
+        transition: transform var(--transition);
+      }
     }
   }
 

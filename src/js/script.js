@@ -11,6 +11,7 @@ import {
   ratingStar,
   modals,
   validateReviewForm,
+  dropDown,
 } from "./functions/";
 
 // Components
@@ -27,6 +28,7 @@ window.addEventListener("DOMContentLoaded", () => {
   horoscopeSlider();
   reviewsSlider();
   validateReviewForm();
+  dropDown();
   ratingStar();
   quiz();
   datePicker();
