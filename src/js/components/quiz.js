@@ -65,6 +65,35 @@ export const quiz = () => {
       return;
     }
   });
+
+  // Получаем значения из первой формы
+  const nextLink = document.querySelector(".next-link");
+
+  nextLink?.addEventListener("click", function (event) {
+    const day = document.getElementById("day-input").value;
+    const month = document.getElementById("month-input").value;
+    const year = document.getElementById("year-input").value;
+
+    const url = new URL(this.href);
+    url.searchParams.set("day", day);
+    url.searchParams.set("month", month);
+    url.searchParams.set("year", year);
+
+    // Обновляем ссылку
+    this.href = url.toString();
+  });
+
+  const urlParams = new URLSearchParams(window.location.search);
+
+  const day = urlParams.get("day");
+  const month = urlParams.get("month");
+  const year = urlParams.get("year");
+
+  // Проверяем и заполняем поля
+  if (day) document.getElementById("day-input-form2").value = day;
+  if (month) document.getElementById("month-input-form2").value = month;
+  if (year) document.getElementById("year-input-form2").value = year;
+
   // На главной
 
   btnStep1?.addEventListener("click", () => {

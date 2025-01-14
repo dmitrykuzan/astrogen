@@ -43,81 +43,93 @@
             зодиакальной оси:
           </h3>
 
-          <div class="hero__bday-fields stack align-center">
-            <div class="dropdown" id="day-dropdown">
-              <div class="dropdown-current">
-                <input type="text" placeholder="5" readonly />
-                <span class="error-text">Заполните поле</span>
-                <span class="icon">
-                  <svg
-                    width="8"
-                    height="5"
-                    viewBox="0 0 8 5"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      fill-rule="evenodd"
-                      clip-rule="evenodd"
-                      d="M0.97549 0.183058C0.752333 -0.0610194 0.390524 -0.0610194 0.167368 0.183058C-0.0557892 0.427136 -0.0557892 0.822864 0.167368 1.06694L3.59594 4.81694C3.8191 5.06102 4.1809 5.06102 4.40406 4.81694L7.83263 1.06694C8.05579 0.822864 8.05579 0.427136 7.83263 0.183058C7.60948 -0.0610194 7.24767 -0.0610194 7.02451 0.183058L4 3.49112L0.97549 0.183058Z"
-                      fill="#303030"
-                    />
-                  </svg>
-                </span>
+          <form id="form1">
+            <div class="hero__bday-fields stack align-center">
+              <div class="dropdown" id="day-dropdown">
+                <div class="dropdown-current">
+                  <input type="text" placeholder="5" id="day-input" readonly />
+                  <span class="error-text">Заполните поле</span>
+                  <span class="icon">
+                    <svg
+                      width="8"
+                      height="5"
+                      viewBox="0 0 8 5"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M0.97549 0.183058C0.752333 -0.0610194 0.390524 -0.0610194 0.167368 0.183058C-0.0557892 0.427136 -0.0557892 0.822864 0.167368 1.06694L3.59594 4.81694C3.8191 5.06102 4.1809 5.06102 4.40406 4.81694L7.83263 1.06694C8.05579 0.822864 8.05579 0.427136 7.83263 0.183058C7.60948 -0.0610194 7.24767 -0.0610194 7.02451 0.183058L4 3.49112L0.97549 0.183058Z"
+                        fill="#303030"
+                      />
+                    </svg>
+                  </span>
+                </div>
+                <ul class="dropdown-list" id="day-list"></ul>
               </div>
-              <ul class="dropdown-list" id="day-list"></ul>
-            </div>
 
-            <div class="dropdown" id="month-dropdown">
-              <div class="dropdown-current">
-                <input type="text" placeholder="Декабрь" readonly />
-                <span class="error-text">Заполните поле</span>
-                <span class="icon">
-                  <svg
-                    width="8"
-                    height="5"
-                    viewBox="0 0 8 5"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      fill-rule="evenodd"
-                      clip-rule="evenodd"
-                      d="M0.97549 0.183058C0.752333 -0.0610194 0.390524 -0.0610194 0.167368 0.183058C-0.0557892 0.427136 -0.0557892 0.822864 0.167368 1.06694L3.59594 4.81694C3.8191 5.06102 4.1809 5.06102 4.40406 4.81694L7.83263 1.06694C8.05579 0.822864 8.05579 0.427136 7.83263 0.183058C7.60948 -0.0610194 7.24767 -0.0610194 7.02451 0.183058L4 3.49112L0.97549 0.183058Z"
-                      fill="#303030"
-                    />
-                  </svg>
-                </span>
+              <div class="dropdown" id="month-dropdown">
+                <div class="dropdown-current">
+                  <input
+                    type="text"
+                    id="month-input"
+                    placeholder="Декабрь"
+                    readonly
+                  />
+                  <span class="error-text">Заполните поле</span>
+                  <span class="icon">
+                    <svg
+                      width="8"
+                      height="5"
+                      viewBox="0 0 8 5"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M0.97549 0.183058C0.752333 -0.0610194 0.390524 -0.0610194 0.167368 0.183058C-0.0557892 0.427136 -0.0557892 0.822864 0.167368 1.06694L3.59594 4.81694C3.8191 5.06102 4.1809 5.06102 4.40406 4.81694L7.83263 1.06694C8.05579 0.822864 8.05579 0.427136 7.83263 0.183058C7.60948 -0.0610194 7.24767 -0.0610194 7.02451 0.183058L4 3.49112L0.97549 0.183058Z"
+                        fill="#303030"
+                      />
+                    </svg>
+                  </span>
+                </div>
+                <ul class="dropdown-list" id="month-list"></ul>
               </div>
-              <ul class="dropdown-list" id="month-list"></ul>
-            </div>
 
-            <div class="dropdown" id="year-dropdown">
-              <div class="dropdown-current">
-                <input type="text" placeholder="1999" readonly />
-                <span class="error-text">Заполните поле</span>
-                <span class="icon">
-                  <svg
-                    width="8"
-                    height="5"
-                    viewBox="0 0 8 5"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      fill-rule="evenodd"
-                      clip-rule="evenodd"
-                      d="M0.97549 0.183058C0.752333 -0.0610194 0.390524 -0.0610194 0.167368 0.183058C-0.0557892 0.427136 -0.0557892 0.822864 0.167368 1.06694L3.59594 4.81694C3.8191 5.06102 4.1809 5.06102 4.40406 4.81694L7.83263 1.06694C8.05579 0.822864 8.05579 0.427136 7.83263 0.183058C7.60948 -0.0610194 7.24767 -0.0610194 7.02451 0.183058L4 3.49112L0.97549 0.183058Z"
-                      fill="#303030"
-                    />
-                  </svg>
-                </span>
+              <div class="dropdown" id="year-dropdown">
+                <div class="dropdown-current">
+                  <input
+                    type="text"
+                    placeholder="1999"
+                    id="year-input"
+                    readonly
+                  />
+                  <span class="error-text">Заполните поле</span>
+                  <span class="icon">
+                    <svg
+                      width="8"
+                      height="5"
+                      viewBox="0 0 8 5"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M0.97549 0.183058C0.752333 -0.0610194 0.390524 -0.0610194 0.167368 0.183058C-0.0557892 0.427136 -0.0557892 0.822864 0.167368 1.06694L3.59594 4.81694C3.8191 5.06102 4.1809 5.06102 4.40406 4.81694L7.83263 1.06694C8.05579 0.822864 8.05579 0.427136 7.83263 0.183058C7.60948 -0.0610194 7.24767 -0.0610194 7.02451 0.183058L4 3.49112L0.97549 0.183058Z"
+                        fill="#303030"
+                      />
+                    </svg>
+                  </span>
+                </div>
+                <ul class="dropdown-list" id="year-list"></ul>
               </div>
-              <ul class="dropdown-list" id="year-list"></ul>
             </div>
-          </div>
+          </form>
 
-          <a class="button hero__bday-link" href="quiz.html">Далее</a>
+          <a class="button hero__bday-link next-link" href="quiz.html">Далее</a>
         </div>
         <img
           class="hero__bday-decor"
