@@ -8,11 +8,28 @@
 
   &__items {
     gap: 2rem;
+
+    @media (max-width: em(575)) {
+      gap: 1rem;
+    }
   }
 
   &__button-login {
     min-height: 3.3rem;
     font-size: 1.4rem;
+
+    @media (max-width: em(575)) {
+      padding-right: 0.5rem;
+      padding-left: 0.5rem;
+      min-height: initial;
+      color: initial;
+      background-color: initial;
+    }
+
+    @media (max-width: em(375)) {
+      padding-right: initial;
+      padding-left: initial;
+    }
   }
 
   &__bottom-mobile {

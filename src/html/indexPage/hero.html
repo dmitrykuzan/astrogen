@@ -12,21 +12,20 @@
     <div class="hero__decor hero__decor-right-top">
       <img src="img/hero/right-top-decor.svg" width="55" height="47" alt="" />
     </div>
-    <div class="hero__wrapper">
+    <div class="hero__wrapper stack column">
       <div class="hero__text stack column">
         <h1 class="hero__title typography center accent h1 w-700">
           Раскройте тайны <span>своей судьбы</span> с натальной картой!
         </h1>
         <div class="hero__description">
-          <p class="typography center p">
+          <p class="typography center">
             Вы чувствуете, что застряли в одном месте? Не понимаете, почему одни
             и те же проблемы повторяются в вашей жизни? Хотите больше
             уверенности в своих решениях или ищете путь к счастью и гармонии?
           </p>
         </div>
-        <p></p>
       </div>
-      <form class="hero__bday stack column">
+      <div class="hero__bday stack column">
         <div
           class="hero__bday-progress stack align-center justify-space-between"
         >
@@ -43,7 +42,7 @@
             зодиакальной оси:
           </h3>
 
-          <form id="form1">
+          <form class="hero__bday-form" id="form1">
             <div class="hero__bday-fields stack align-center">
               <div class="dropdown" id="day-dropdown">
                 <div class="dropdown-current">
@@ -138,7 +137,7 @@
           height="207"
           alt="Astro circle decor"
         />
-      </form>
+      </div>
     </div>
   </div>
 </section>

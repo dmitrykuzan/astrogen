@@ -31,7 +31,7 @@ $overlayBgColor: rgba(240, 242, 251, 0.5);
     padding-bottom: 2.5rem;
     width: 100%;
     max-width: 51rem;
-    box-shadow: 0px 4px 10px 0px rgba(77, 77, 77, 0.15);
+    box-shadow: var(--clr-shadow-500);
     background-color: var(--clr-default-100);
     opacity: 0;
     transform: translateY(-100%);

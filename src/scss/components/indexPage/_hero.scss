@@ -7,6 +7,11 @@
 
   &__wrapper {
     font-size: fluid-font(2rem, 1.4rem);
+    gap: 3rem;
+
+    @media (max-width: em(992)) {
+      gap: 2rem;
+    }
   }
 
   &__text {
@@ -28,6 +33,12 @@
     line-height: 120%;
   }
 
+  &__description {
+    p {
+      line-height: 132%;
+    }
+  }
+
   &__bday {
     position: relative;
     margin-right: auto;
@@ -39,7 +50,7 @@
     padding-bottom: 5rem;
     padding-left: 2rem;
     max-width: 79rem;
-    box-shadow: 0px 4px 10px 0px rgba(77, 77, 77, 0.15);
+    box-shadow: var(--clr-shadow-500);
     background-color: var(--clr-default-100);
     gap: 3rem;
 
@@ -133,6 +144,10 @@
     &-title {
       max-width: 52rem;
       font-size: fluid-font(2.2rem, 1.8rem);
+    }
+
+    &-form {
+      width: 100%;
     }
 
     &-fields {
