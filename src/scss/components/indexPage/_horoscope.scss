@@ -52,9 +52,15 @@
     }
 
     &-text {
+      p {
+        line-height: 132%;
+      }
+
       &-mobile {
         padding-bottom: 1rem;
+
         p {
+          line-height: 132%;
           @media (max-width: em(992)) {
             text-align: center;
           }
